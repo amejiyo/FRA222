@@ -1,0 +1,82 @@
+17:29:52 **** Incremental Build of configuration Debug for project week1_1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "week1_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\week1_1\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week1_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: week1_1.elf
+ 
+arm-none-eabi-objdump -h -S  week1_1.elf  > "week1_1.list"
+arm-none-eabi-objcopy  -O binary  week1_1.elf  "week1_1.bin"
+arm-none-eabi-size   week1_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8200	     20	   1636	   9856	   2680	week1_1.elf
+Finished building: default.size.stdout
+Finished building: week1_1.bin
+Finished building: week1_1.list
+ 
+ 
+ 
+17:30:09 **** Incremental Build of configuration Debug for project week1_1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:10: warning: unused variable 'S1' [-Wunused-variable]
+  uint8_t S1 = 0;
+          ^~
+../Core/Src/main.c:100:11: warning: unused variable 'TimeStamp3' [-Wunused-variable]
+  uint32_t TimeStamp3 = 0;
+           ^~~~~~~~~~
+../Core/Src/main.c:99:11: warning: unused variable 'ButtonTimeStamp' [-Wunused-variable]
+  uint32_t ButtonTimeStamp = 0;
+           ^~~~~~~~~~~~~~~
+../Core/Src/main.c:98:11: warning: unused variable 'TimeStamp' [-Wunused-variable]
+  uint32_t TimeStamp = 0;
+           ^~~~~~~~~
+../Core/Src/main.c:97:8: warning: unused variable 'S3' [-Wunused-variable]
+  _Bool S3 = 0;
+        ^~
+../Core/Src/main.c:96:8: warning: unused variable 'S2' [-Wunused-variable]
+  _Bool S2 = 0;
+        ^~
+../Core/Src/main.c:95:11: warning: unused variable 'LED1_Half_Period' [-Wunused-variable]
+  uint16_t LED1_Half_Period = 500;  // 1 Hz
+           ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:94:16: warning: unused variable 'SwitchStateS3' [-Wunused-variable]
+  GPIO_PinState SwitchStateS3[2];
+                ^~~~~~~~~~~~~
+../Core/Src/main.c:93:16: warning: unused variable 'SwitchStateS2' [-Wunused-variable]
+  GPIO_PinState SwitchStateS2[2];
+                ^~~~~~~~~~~~~
+../Core/Src/main.c:92:16: warning: unused variable 'SwitchStateS1' [-Wunused-variable]
+  GPIO_PinState SwitchStateS1[2];  //Now, Previous S1
+                ^~~~~~~~~~~~~
+arm-none-eabi-g++ -o "week1_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\week1_1\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week1_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: week1_1.elf
+ 
+arm-none-eabi-objdump -h -S  week1_1.elf  > "week1_1.list"
+arm-none-eabi-objcopy  -O binary  week1_1.elf  "week1_1.bin"
+arm-none-eabi-size   week1_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8232	     20	   1636	   9888	   26a0	week1_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: week1_1.list
+Finished building: week1_1.bin
+ 
+ 
+17:30:40 **** Incremental Build of configuration Debug for project week1_1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "week1_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\week1_1\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week1_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: week1_1.elf
+ 
+arm-none-eabi-objdump -h -S  week1_1.elf  > "week1_1.list"
+arm-none-eabi-objcopy  -O binary  week1_1.elf  "week1_1.bin"
+arm-none-eabi-size   week1_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8800	     20	   1636	  10456	   28d8	week1_1.elf
+Finished building: default.size.stdout
+Finished building: week1_1.bin
+Finished building: week1_1.list
+ 
+ 
+ 

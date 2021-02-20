@@ -1,0 +1,20 @@
+17:30:40 **** Incremental Build of configuration Debug for project week1_1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "week1_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\week1_1\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week1_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: week1_1.elf
+ 
+arm-none-eabi-objdump -h -S  week1_1.elf  > "week1_1.list"
+arm-none-eabi-objcopy  -O binary  week1_1.elf  "week1_1.bin"
+arm-none-eabi-size   week1_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8800	     20	   1636	  10456	   28d8	week1_1.elf
+Finished building: default.size.stdout
+Finished building: week1_1.bin
+Finished building: week1_1.list
+ 
+ 
+ 
+
+17:30:44 Build Finished. 0 errors, 0 warnings. (took 3s.974ms)
+
