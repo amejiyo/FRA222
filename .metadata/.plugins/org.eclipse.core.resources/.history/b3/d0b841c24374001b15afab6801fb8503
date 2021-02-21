@@ -44,17 +44,13 @@ UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 uint16_t CodeStore[11] = { 0 };
-uint16_t check[11] = {2,4,0,0,0,5,0,4,3,2,6};
+uint16_t check[11] = {6,2,3,4,0,5,0,0,0,4,2};
 uint16_t ButtonMatrixState = 0;
 uint32_t TimeStamp = 0;
 uint32_t Time = 0;
 int j = 0;
 int a[2] = { 0 };
-int x;
-int address = 0;
-_Bool b = 0;
 uint16_t map[16] = {7,8,9,10,4,5,6,15,1,2,3,15,0,15,15,11};
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -110,45 +106,33 @@ int main(void)
 				a[0] = ButtonMatrixState;
 				if((a[1] == 0 && a[0] != 0)&&(HAL_GetTick() - Time >= 100)){
 					Time = HAL_GetTick();
-					b = 0;
 					int i;
-					address = log2(ButtonMatrixState);
-					x = map[address];
+					for (i=j;i>=1;i--){
+						CodeStore[i] = CodeStore[i-1];
+					}
+					int address = log2(ButtonMatrixState);
 					if (map[address] == 15){
 						continue;
 					}
 					else if (map[address] == 10){
-						int i;
-						for (i=0;i<11;i++){
-							CodeStore[i] = 0;
-						}
+						uint16_t CodeStore[11] = {0};
 					}
 					else if (map[address] == 11){
 						int i;
-						b = 1;
-						for (i=0;i<11;i++){
+						_Bool a;
+						for (i=0,i<11;i++){
 							if(CodeStore[i] != check[i]){
-								b = 0;
+								a =  false;
 							}
 						}
-						continue;
 					}
 					else{
-						for (i=j;i>=1;i--){
-							CodeStore[i] = CodeStore[i-1];
-						}
 						CodeStore[0] = map[address];
 						j += 1;
 						if (j> 10){
 							j =10;
 						}
 					}
-				}
-				if (b == 1){
-					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-				}
-				else{
-					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
 				}
 				a[1] = a[0];
     /* USER CODE END WHILE */

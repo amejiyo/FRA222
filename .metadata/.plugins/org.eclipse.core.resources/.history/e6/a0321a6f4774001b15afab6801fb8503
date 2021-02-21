@@ -44,7 +44,7 @@ UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 uint16_t CodeStore[11] = { 0 };
-uint16_t check[11] = {2,4,0,0,0,5,0,4,3,2,6};
+uint16_t check[11] = {6,2,3,4,0,5,0,0,0,4,2};
 uint16_t ButtonMatrixState = 0;
 uint32_t TimeStamp = 0;
 uint32_t Time = 0;
@@ -110,7 +110,6 @@ int main(void)
 				a[0] = ButtonMatrixState;
 				if((a[1] == 0 && a[0] != 0)&&(HAL_GetTick() - Time >= 100)){
 					Time = HAL_GetTick();
-					b = 0;
 					int i;
 					address = log2(ButtonMatrixState);
 					x = map[address];
@@ -145,10 +144,10 @@ int main(void)
 					}
 				}
 				if (b == 1){
-					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
 				}
 				else{
-					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
 				}
 				a[1] = a[0];
     /* USER CODE END WHILE */

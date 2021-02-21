@@ -110,7 +110,6 @@ int main(void)
 				a[0] = ButtonMatrixState;
 				if((a[1] == 0 && a[0] != 0)&&(HAL_GetTick() - Time >= 100)){
 					Time = HAL_GetTick();
-					b = 0;
 					int i;
 					address = log2(ButtonMatrixState);
 					x = map[address];

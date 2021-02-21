@@ -1,18 +1,15 @@
-19:40:47 **** Incremental Build of configuration Debug for project Lab2 ****
+20:20:46 **** Incremental Build of configuration Debug for project Lab2 ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+../Core/Src/main.c:109:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
      buttonMatrix();
      ^~~~~~~~~~~~
-../Core/Src/main.c:117:16: warning: unused variable 'CodeStore' [-Wunused-variable]
-       uint16_t CodeStore[11] = {0};
-                ^~~~~~~~~
 ../Core/Src/main.c: At top level:
-../Core/Src/main.c:291:8: warning: conflicting types for 'buttonMatrix'
+../Core/Src/main.c:314:8: warning: conflicting types for 'buttonMatrix'
    void buttonMatrix() {
         ^~~~~~~~~~~~
-../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
+../Core/Src/main.c:109:5: note: previous implicit declaration of 'buttonMatrix' was here
      buttonMatrix();
      ^~~~~~~~~~~~
 arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -22,13 +19,13 @@ arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
 arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
 arm-none-eabi-size   Lab2.elf 
    text	   data	    bss	    dec	    hex	filename
-  12328	    200	   1680	  14208	   3780	Lab2.elf
+  12480	    224	   1688	  14392	   3838	Lab2.elf
 Finished building: default.size.stdout
-Finished building: Lab2.bin
  
 Finished building: Lab2.list
+Finished building: Lab2.bin
  
  
 
-19:40:50 Build Finished. 0 errors, 3 warnings. (took 2s.920ms)
+20:20:49 Build Finished. 0 errors, 2 warnings. (took 3s.59ms)
 
