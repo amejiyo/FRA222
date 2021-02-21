@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <math.h>
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,34 +101,8 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 			while (1) {
-				buttonMatrix();
-				a[0] = ButtonMatrixState;
-				if((a[1] == 0 && a[0] != 0)&&(HAL_GetTick() - Time >= 100)){
-					Time = HAL_GetTick();
-					int i;
-					for (i=j;i>=1;i--){
-						CodeStore[i] = CodeStore[i-1];
-					}
-					int address = log2(ButtonMatrixState);
-					if (map[address] == 15){
-						continue;
-					}
-					else if (map[address] == 10){
-						uint16_t CodeStore[11] = {0};
-					}
-					else if (map[address] == 11){
-						continue;
-					}
-					else{
-						CodeStore[0] = map[address];
-						j += 1;
-						if (j> 10){
-							j =10;
-						}
-					}
-				}
-				a[1] = a[0];
     /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
 			}
   /* USER CODE END 3 */

@@ -49,7 +49,7 @@ uint32_t TimeStamp = 0;
 uint32_t Time = 0;
 int j = 0;
 int a[2] = { 0 };
-uint16_t map[16] = {7,8,9,10,4,5,6,15,1,2,3,15,0,15,15,11};
+uint16_t map[16] = {7,8,9,10,4,5,6,15,1,2,13,15,0,15,15,11};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -110,13 +110,13 @@ int main(void)
 						CodeStore[i] = CodeStore[i-1];
 					}
 					int address = log2(ButtonMatrixState);
-					if (map[address] == 15){
+					if (address == 15){
 						continue;
 					}
-					else if (map[address] == 10){
+					else if (address == 10){
 						uint16_t CodeStore[11] = {0};
 					}
-					else if (map[address] == 11){
+					else if (address == 11){
 						continue;
 					}
 					else{

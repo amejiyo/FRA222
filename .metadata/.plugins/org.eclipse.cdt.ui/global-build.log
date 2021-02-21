@@ -1,1283 +1,18 @@
-11:15:38 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:101:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:259:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:101:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-size   Lab2.elf 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-   text	   data	    bss	    dec	    hex	filename
-   8500	     68	   1644	  10212	   27e4	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
-11:16:07 **** Incremental Build of configuration Debug for project Lab2 ****
+18:26:32 **** Incremental Build of configuration Debug for project Lab2 ****
 make -j4 all 
 arm-none-eabi-size   Lab2.elf 
    text	   data	    bss	    dec	    hex	filename
-   8500	     68	   1644	  10212	   27e4	Lab2.elf
+  11984	    152	   1672	  13808	   35f0	Lab2.elf
 Finished building: default.size.stdout
  
-11:17:24 **** Incremental Build of configuration Debug for project Lab2 ****
+18:26:36 **** Incremental Build of configuration Debug for project Lab2 ****
 make -j4 all 
 arm-none-eabi-size   Lab2.elf 
    text	   data	    bss	    dec	    hex	filename
-   8500	     68	   1644	  10212	   27e4	Lab2.elf
+  11984	    152	   1672	  13808	   35f0	Lab2.elf
 Finished building: default.size.stdout
  
-11:19:16 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:101:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:259:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:101:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8512	     68	   1644	  10224	   27f0	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
-11:19:58 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8512	     68	   1644	  10224	   27f0	Lab2.elf
-Finished building: default.size.stdout
- 
-11:25:29 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:101:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:259:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:101:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8512	     68	   1644	  10224	   27f0	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
-11:28:44 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:102:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:103:4: error: 'a' undeclared (first use in this function)
-    a = int(ButtonMatrixState)
-    ^
-../Core/Src/main.c:103:4: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:103:8: error: expected expression before 'int'
-    a = int(ButtonMatrixState)
-        ^~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:261:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:102:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-11:29:17 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:102:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:105:3: error: expected ',' or ';' before '}' token
-   }
-   ^
-../Core/Src/main.c:103:8: warning: unused variable 'a' [-Wunused-variable]
-    int a = ButtonMatrixState
-        ^
-../Core/Src/main.c:158:13: error: invalid storage class for function 'MX_USART2_UART_Init'
- static void MX_USART2_UART_Init(void)
-             ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:191:13: error: invalid storage class for function 'MX_GPIO_Init'
- static void MX_GPIO_Init(void)
-             ^~~~~~~~~~~~
-../Core/Src/main.c:295:1: error: expected declaration or statement at end of input
- }
- ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:53:13: warning: 'MX_GPIO_Init' used but never defined
- static void MX_GPIO_Init(void);
-             ^~~~~~~~~~~~
-../Core/Src/main.c:54:13: warning: 'MX_USART2_UART_Init' used but never defined
- static void MX_USART2_UART_Init(void);
-             ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:286:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
- void Error_Handler(void)
-      ^~~~~~~~~~~~~
-../Core/Src/main.c:261:6: warning: 'buttonMatrix' defined but not used [-Wunused-function]
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:191:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
- static void MX_GPIO_Init(void)
-             ^~~~~~~~~~~~
-../Core/Src/main.c:158:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
- static void MX_USART2_UART_Init(void)
-             ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:113:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
- void SystemClock_Config(void)
-      ^~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-11:29:37 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:102:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:103:8: warning: unused variable 'a' [-Wunused-variable]
-    int a = ButtonMatrixState;
-        ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:261:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:102:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8512	     68	   1644	  10224	   27f0	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
- 
-11:30:38 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8512	     68	   1644	  10224	   27f0	Lab2.elf
-Finished building: default.size.stdout
- 
-11:31:56 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:102:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:103:8: warning: unused variable 'a' [-Wunused-variable]
-    int a = ButtonMatrixState;
-        ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:261:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:102:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8512	     68	   1644	  10224	   27f0	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
- 
-12:27:34 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:47:25: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
- uint16_t *addressCode = &CodeStore;
-                         ^
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:107:6: error: 'i' undeclared (first use in this function)
-     *i = a;
-      ^
-../Core/Src/main.c:107:6: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:270:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:104:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-12:28:22 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:47:25: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
- uint16_t *addressCode = &CodeStore;
-                         ^
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:109:21: warning: comparison between pointer and integer
-     if (addressCode >= 16){
-                     ^~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:270:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:104:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8556	     72	   1664	  10292	   2834	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
- 
-12:29:12 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8556	     72	   1664	  10292	   2834	Lab2.elf
-Finished building: default.size.stdout
- 
-12:31:01 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:47:25: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
- uint16_t *addressCode = &CodeStore;
-                         ^
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:109:21: warning: comparison between pointer and integer
-     if (addressCode >= 16){
-                     ^~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:270:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:104:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8564	     72	   1664	  10300	   283c	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
-12:32:56 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:47:25: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
- uint16_t *addressCode = &CodeStore;
-                         ^
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:109:21: warning: comparison between pointer and integer
-     if (addressCode >= 16){
-                     ^~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:270:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:104:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8604	     72	   1664	  10340	   2864	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
- 
-12:33:14 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:47:25: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
- uint16_t *addressCode = &CodeStore;
-                         ^
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:109:21: warning: comparison between pointer and integer
-     if (addressCode >= 16){
-                     ^~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:270:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:104:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8616	     72	   1664	  10352	   2870	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
- 
-14:01:32 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:103:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:106:15: error: 'j' undeclared (first use in this function)
-     CodeStore[j] = a;
-               ^
-../Core/Src/main.c:106:15: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:269:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:103:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-14:01:54 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:270:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:104:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8624	     68	   1668	  10360	   2878	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.bin
- 
-Finished building: Lab2.list
- 
-14:03:45 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:105:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:272:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:105:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8652	     68	   1676	  10396	   289c	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
- 
-14:07:20 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:105:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:110:18: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-     CodeStore[j] = a;
-                  ^
-../Core/Src/main.c:118:3: error: expected ';' before '}' token
-   }
-   ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:105:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-14:07:30 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:105:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:110:18: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-     CodeStore[j] = a;
-                  ^
-../Core/Src/main.c:118:3: error: expected ';' before '}' token
-   }
-   ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:105:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-14:07:45 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:105:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:110:18: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-     CodeStore[j] = a;
-                  ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:105:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8668	     68	   1676	  10412	   28ac	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
- 
-14:09:39 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:105:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:110:18: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-     CodeStore[j] = a;
-                  ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:105:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8668	     68	   1676	  10412	   28ac	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
- 
-14:10:55 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:110:18: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-     CodeStore[j] = a;
-                  ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8676	     68	   1684	  10428	   28bc	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
- 
-14:12:24 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8676	     68	   1684	  10428	   28bc	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
-14:13:58 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8672	     68	   1684	  10424	   28b8	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
- 
-14:14:49 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8676	     68	   1684	  10428	   28bc	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
- 
-14:14:52 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8676	     68	   1684	  10428	   28bc	Lab2.elf
-Finished building: default.size.stdout
- 
-14:16:05 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8680	     68	   1684	  10432	   28c0	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
-14:19:33 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8660	     68	   1684	  10412	   28ac	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
- 
-17:02:43 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:110:20: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-     CodeStore[j] = log2(ButtonMatrixState);
-                    ^~~~
-../Core/Src/main.c:110:20: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:110:20: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12224	    168	   1680	  14072	   36f8	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
-17:13:02 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:111:19: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-     for (i = 10 ; i = 1; i--){
-                   ^
-../Core/Src/main.c:114:21: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-     CodeStore[10] = log2(ButtonMatrixState);
-                     ^~~~
-../Core/Src/main.c:114:21: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:114:21: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8656	     68	   1676	  10400	   28a0	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
-17:16:01 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:114:21: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-     CodeStore[10] = log2(ButtonMatrixState);
-                     ^~~~
-../Core/Src/main.c:114:21: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:114:21: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12224	    168	   1680	  14072	   36f8	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
-17:18:03 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:114:21: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-     CodeStore[10] = log2(ButtonMatrixState);
-                     ^~~~
-../Core/Src/main.c:114:21: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:114:21: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12224	    168	   1680	  14072	   36f8	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
- 
-17:18:55 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:114:21: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-     CodeStore[10] = log2(ButtonMatrixState);
-                     ^~~~
-../Core/Src/main.c:114:21: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:114:21: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12224	    168	   1680	  14072	   36f8	Lab2.elf
-Finished building: default.size.stdout
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
- 
-17:20:55 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:114:21: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-     CodeStore[10] = log2(ButtonMatrixState);
-                     ^~~~
-../Core/Src/main.c:114:21: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:114:21: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12224	    168	   1680	  14072	   36f8	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
-17:21:32 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:114:20: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-     CodeStore[0] = log2(ButtonMatrixState);
-                    ^~~~
-../Core/Src/main.c:114:20: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:114:20: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12224	    168	   1680	  14072	   36f8	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
-17:22:53 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:114:20: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-     CodeStore[0] = log2(ButtonMatrixState);
-                    ^~~~
-../Core/Src/main.c:114:20: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:114:20: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:278:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12256	    168	   1680	  14104	   3718	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
-17:23:53 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:106:4: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-    buttonMatrix();
-    ^~~~~~~~~~~~
-../Core/Src/main.c:114:20: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-     CodeStore[0] = log2(ButtonMatrixState);
-                    ^~~~
-../Core/Src/main.c:114:20: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:114:20: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:278:6: warning: conflicting types for 'buttonMatrix'
- void buttonMatrix(){
-      ^~~~~~~~~~~~
-../Core/Src/main.c:106:4: note: previous implicit declaration of 'buttonMatrix' was here
-    buttonMatrix();
-    ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12256	    168	   1680	  14104	   3718	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.bin
-Finished building: Lab2.list
- 
- 
-17:32:31 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12256	    168	   1680	  14104	   3718	Lab2.elf
-Finished building: default.size.stdout
- 
-17:41:36 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:52:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
- map <int,string> map1 = { {12,'0'}, {8,'1'}, {9,'2'}, {10,'3'}, {4,'4'}, {5,'5'}, {6,'6'}, {0,'7'}, {1,'8'}, {2,'9'}, {15,'ok'}, {3,'clc'}};
-     ^
-../Core/Src/main.c:52:123: warning: multi-character character constant [-Wmultichar]
- map <int,string> map1 = { {12,'0'}, {8,'1'}, {9,'2'}, {10,'3'}, {4,'4'}, {5,'5'}, {6,'6'}, {0,'7'}, {1,'8'}, {2,'9'}, {15,'ok'}, {3,'clc'}};
-                                                                                                                           ^~~~
-../Core/Src/main.c:52:133: warning: multi-character character constant [-Wmultichar]
- map <int,string> map1 = { {12,'0'}, {8,'1'}, {9,'2'}, {10,'3'}, {4,'4'}, {5,'5'}, {6,'6'}, {0,'7'}, {1,'8'}, {2,'9'}, {15,'ok'}, {3,'clc'}};
-                                                                                                                                     ^~~~~
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-     buttonMatrix();
-     ^~~~~~~~~~~~
-../Core/Src/main.c:112:21: error: 'map1' undeclared (first use in this function); did you mean 'main'?
-      CodeStore[0] = map1[log2(ButtonMatrixState)];
-                     ^~~~
-                     main
-../Core/Src/main.c:112:21: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:112:26: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-      CodeStore[0] = map1[log2(ButtonMatrixState)];
-                          ^~~~
-../Core/Src/main.c:112:26: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:112:26: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:8: warning: conflicting types for 'buttonMatrix'
-   void buttonMatrix() {
-        ^~~~~~~~~~~~
-../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
-     buttonMatrix();
-     ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-17:42:14 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:22:10: fatal error: map: No such file or directory
- #include "map"
-          ^~~~~
-compilation terminated.
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-17:47:06 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:52:27: warning: multi-character character constant [-Wmultichar]
- uint16_t map[16] = {7,8,9,'clc',4,5,6,'',1,2,3,'',0,'','','ok'};
-                           ^~~~~
-../Core/Src/main.c:52:27: warning: large integer implicitly truncated to unsigned type [-Woverflow]
-../Core/Src/main.c:52:39: error: empty character constant
- uint16_t map[16] = {7,8,9,'clc',4,5,6,'',1,2,3,'',0,'','','ok'};
-                                       ^~
-../Core/Src/main.c:52:48: error: empty character constant
- uint16_t map[16] = {7,8,9,'clc',4,5,6,'',1,2,3,'',0,'','','ok'};
-                                                ^~
-../Core/Src/main.c:52:53: error: empty character constant
- uint16_t map[16] = {7,8,9,'clc',4,5,6,'',1,2,3,'',0,'','','ok'};
-                                                     ^~
-../Core/Src/main.c:52:56: error: empty character constant
- uint16_t map[16] = {7,8,9,'clc',4,5,6,'',1,2,3,'',0,'','','ok'};
-                                                        ^~
-../Core/Src/main.c:52:59: warning: multi-character character constant [-Wmultichar]
- uint16_t map[16] = {7,8,9,'clc',4,5,6,'',1,2,3,'',0,'','','ok'};
-                                                           ^~~~
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-     buttonMatrix();
-     ^~~~~~~~~~~~
-../Core/Src/main.c:112:25: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-      CodeStore[0] = map[log2(ButtonMatrixState)];
-                         ^~~~
-../Core/Src/main.c:112:25: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:112:25: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c:112:24: error: array subscript is not an integer
-      CodeStore[0] = map[log2(ButtonMatrixState)];
-                        ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:8: warning: conflicting types for 'buttonMatrix'
-   void buttonMatrix() {
-        ^~~~~~~~~~~~
-../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
-     buttonMatrix();
-     ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-17:47:45 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:52:27: warning: multi-character character constant [-Wmultichar]
- uint16_t map[16] = {7,8,9,'clc',4,5,6,'a',1,2,3,'a',0,'a','a','ok'};
-                           ^~~~~
-../Core/Src/main.c:52:27: warning: large integer implicitly truncated to unsigned type [-Woverflow]
-../Core/Src/main.c:52:63: warning: multi-character character constant [-Wmultichar]
- uint16_t map[16] = {7,8,9,'clc',4,5,6,'a',1,2,3,'a',0,'a','a','ok'};
-                                                               ^~~~
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-     buttonMatrix();
-     ^~~~~~~~~~~~
-../Core/Src/main.c:112:25: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
-      CodeStore[0] = map[log2(ButtonMatrixState)];
-                         ^~~~
-../Core/Src/main.c:112:25: warning: incompatible implicit declaration of built-in function 'log2'
-../Core/Src/main.c:112:25: note: include '<math.h>' or provide a declaration of 'log2'
-../Core/Src/main.c:112:24: error: array subscript is not an integer
-      CodeStore[0] = map[log2(ButtonMatrixState)];
-                        ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:8: warning: conflicting types for 'buttonMatrix'
-   void buttonMatrix() {
-        ^~~~~~~~~~~~
-../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
-     buttonMatrix();
-     ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-17:48:43 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-     buttonMatrix();
-     ^~~~~~~~~~~~
-../Core/Src/main.c:112:24: error: array subscript is not an integer
-      CodeStore[0] = map[log2(ButtonMatrixState)];
-                        ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:8: warning: conflicting types for 'buttonMatrix'
-   void buttonMatrix() {
-        ^~~~~~~~~~~~
-../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
-     buttonMatrix();
-     ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-17:49:07 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-     buttonMatrix();
-     ^~~~~~~~~~~~
-../Core/Src/main.c:112:24: error: array subscript is not an integer
-      CodeStore[0] = map[log2(ButtonMatrixState)];
-                        ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:274:8: warning: conflicting types for 'buttonMatrix'
-   void buttonMatrix() {
-        ^~~~~~~~~~~~
-../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
-     buttonMatrix();
-     ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-17:49:46 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-     buttonMatrix();
-     ^~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:275:8: warning: conflicting types for 'buttonMatrix'
-   void buttonMatrix() {
-        ^~~~~~~~~~~~
-../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
-     buttonMatrix();
-     ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab2.elf
- 
-arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
-arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
-arm-none-eabi-size   Lab2.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12264	    200	   1680	  14144	   3740	Lab2.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab2.list
-Finished building: Lab2.bin
- 
- 
-17:52:22 **** Incremental Build of configuration Debug for project Lab2 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
-     buttonMatrix();
-     ^~~~~~~~~~~~
-../Core/Src/main.c:117:23: error: expected expression before '{' token
-       CodeStore[11] = {0};
-                       ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:286:8: warning: conflicting types for 'buttonMatrix'
-   void buttonMatrix() {
-        ^~~~~~~~~~~~
-../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
-     buttonMatrix();
-     ^~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-17:54:24 **** Incremental Build of configuration Debug for project Lab2 ****
+18:27:31 **** Incremental Build of configuration Debug for project Lab2 ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
@@ -1288,7 +23,7 @@ arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_
        uint16_t CodeStore[11] = {0};
                 ^~~~~~~~~
 ../Core/Src/main.c: At top level:
-../Core/Src/main.c:286:8: warning: conflicting types for 'buttonMatrix'
+../Core/Src/main.c:291:8: warning: conflicting types for 'buttonMatrix'
    void buttonMatrix() {
         ^~~~~~~~~~~~
 ../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
@@ -1304,14 +39,229 @@ arm-none-eabi-size   Lab2.elf
   12312	    200	   1680	  14192	   3770	Lab2.elf
 Finished building: default.size.stdout
  
-Finished building: Lab2.list
 Finished building: Lab2.bin
+Finished building: Lab2.list
  
  
-17:54:34 **** Incremental Build of configuration Debug for project Lab2 ****
+18:28:45 **** Incremental Build of configuration Debug for project Lab2 ****
 make -j4 all 
 arm-none-eabi-size   Lab2.elf 
    text	   data	    bss	    dec	    hex	filename
   12312	    200	   1680	  14192	   3770	Lab2.elf
 Finished building: default.size.stdout
+ 
+18:30:20 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+../Core/Src/main.c:117:16: warning: unused variable 'CodeStore' [-Wunused-variable]
+       uint16_t CodeStore[11] = {0};
+                ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:291:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12304	    200	   1680	  14184	   3768	Lab2.elf
+Finished building: default.size.stdout
+Finished building: Lab2.bin
+Finished building: Lab2.list
+ 
+ 
+ 
+18:32:07 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+../Core/Src/main.c:117:16: warning: unused variable 'CodeStore' [-Wunused-variable]
+       uint16_t CodeStore[11] = {0};
+                ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:291:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12312	    200	   1680	  14192	   3770	Lab2.elf
+Finished building: default.size.stdout
+Finished building: Lab2.bin
+ 
+Finished building: Lab2.list
+ 
+ 
+19:30:16 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12312	    200	   1680	  14192	   3770	Lab2.elf
+Finished building: default.size.stdout
+ 
+19:31:12 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+../Core/Src/main.c:117:16: warning: unused variable 'CodeStore' [-Wunused-variable]
+       uint16_t CodeStore[11] = {0};
+                ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:291:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12312	    200	   1680	  14192	   3770	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.bin
+Finished building: Lab2.list
+ 
+ 
+19:32:43 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:25:0:
+../Core/Src/main.c:53:15: error: initializer element is not constant
+ int address = log2(ButtonMatrixState);
+               ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+../Core/Src/main.c:117:16: warning: unused variable 'CodeStore' [-Wunused-variable]
+       uint16_t CodeStore[11] = {0};
+                ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:291:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:105:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:33:38 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:25:0:
+../Core/Src/main.c:53:15: error: initializer element is not constant
+ int address = log2(ButtonMatrixState);
+               ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+../Core/Src/main.c:118:16: warning: unused variable 'CodeStore' [-Wunused-variable]
+       uint16_t CodeStore[11] = {0};
+                ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:292:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:105:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:39:01 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+../Core/Src/main.c:117:16: warning: unused variable 'CodeStore' [-Wunused-variable]
+       uint16_t CodeStore[11] = {0};
+                ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:291:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12312	    200	   1680	  14192	   3770	Lab2.elf
+Finished building: default.size.stdout
+Finished building: Lab2.bin
+Finished building: Lab2.list
+ 
+ 
+ 
+19:39:18 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12312	    200	   1680	  14192	   3770	Lab2.elf
+Finished building: default.size.stdout
+ 
+19:40:47 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+../Core/Src/main.c:117:16: warning: unused variable 'CodeStore' [-Wunused-variable]
+       uint16_t CodeStore[11] = {0};
+                ^~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:291:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:104:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12328	    200	   1680	  14208	   3780	Lab2.elf
+Finished building: default.size.stdout
+Finished building: Lab2.bin
+ 
+Finished building: Lab2.list
+ 
  
