@@ -45,7 +45,13 @@ ADC_HandleTypeDef hadc1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-
+typedef struct
+{
+	ADC_ChannelConfTypeDef Config;
+	uint32_t Data;
+} ADCStructure;
+#include "math.h";
+ADCStructure ADCChannel[3]= {0};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -54,7 +60,8 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_ADC1_Init(void);
 /* USER CODE BEGIN PFP */
-
+void ADCPollingMethodUpdate();
+void ADCPollingMethodInit();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -93,7 +100,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
-
+ADCPollingMethodInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -101,7 +108,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+ADCPollingMethodUpdate();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -268,7 +275,42 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void ADCPollingMethodInit()
+{
+	//PA0 -ADC IN0
+	ADCChannel[0].Config.Channel = ADC_CHANNEL_0;
+	ADCChannel[0].Config.Rank = 1;
+	ADCChannel[0].Config.SamplingTime = ADC_SAMPLETIME_3CYCLES;
 
+	//PA1 -ADC IN1
+	ADCChannel[1].Config.Channel = ADC_CHANNEL_1;
+	ADCChannel[1].Config.Rank = 1;
+	ADCChannel[1].Config.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+
+	//Temp
+	ADCChannel[2].Config.Channel = ADC_CHANNEL_TEMPSENSOR;
+	ADCChannel[2].Config.Rank = 1;
+	ADCChannel[2].Config.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+}
+void ADCPollingMethodUpdate()
+{
+	for (int i = 0; i <3; i++)
+	{
+	//select channel
+	HAL_ADC_ConfigChannel(&hadc1,&ADCChannel[i].Config);
+	//ADC Sampling, Convert
+	HAL_ADC_Start(&hadc1);
+	//wait ADC
+	if(HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK)
+	{
+		//Get Value
+		ADCChannel[i].Data = HAL_ADC_GetValue(&hadc1);
+
+	}
+	//Stop
+	HAL_ADC_Stop(&hadc1);
+	}
+}
 /* USER CODE END 4 */
 
 /**

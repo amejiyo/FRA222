@@ -51,6 +51,7 @@ uint32_t Time = 0;
 int j = 0;
 int a[2] = { 0 };
 int x;
+int test = 0;
 int address = 0;
 _Bool b = 0;
 uint16_t map[16] = {7,8,9,10,4,5,6,15,1,2,3,15,0,15,15,11};
@@ -61,8 +62,9 @@ uint16_t map[16] = {7,8,9,10,4,5,6,15,1,2,3,15,0,15,15,11};
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
-/* USER CODE BEGIN PFP */
 
+/* USER CODE BEGIN PFP */
+void ButtonMatrix();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -106,7 +108,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 			while (1) {
-				buttonMatrix();
+				ButtonMatrix();
 				a[0] = ButtonMatrixState;
 				if((a[1] == 0 && a[0] != 0)&&(HAL_GetTick() - Time >= 100)){
 					Time = HAL_GetTick();
@@ -311,7 +313,7 @@ static void MX_GPIO_Init(void)
 				GPIO_PIN_9, GPIO_PIN_7, GPIO_PIN_6, GPIO_PIN_7 };
 		uint8_t ButtonMatrixRow = 0;
 
-		void buttonMatrix() {
+		void ButtonMatrix() {
 			if (HAL_GetTick() - TimeStamp >= 100) {
 				TimeStamp = HAL_GetTick();
 				int i;

@@ -734,3 +734,1211 @@ Finished building: Lab2.list
 Finished building: Lab2.bin
  
  
+14:38:10 **** Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411retx.d" -MT"Core/Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411retx.o" "../Core/Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+../Core/Src/main.c:50:2: error: unknown type name 'ADC_ChannelConfigTypeDEf'
+  ADC_ChannelConfigTypeDEf Config;
+  ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'ADCPollingMethodInit':
+../Core/Src/main.c:281:22: error: request for member 'Channel' in something not a structure or union
+  ADCChannel[0].Config.Channel = ADC_CHANNEL_0;
+                      ^
+../Core/Src/main.c:282:22: error: request for member 'Rank' in something not a structure or union
+  ADCChannel[0].Config.Rank = 1;
+                      ^
+../Core/Src/main.c:283:22: error: request for member 'SamplingTime' in something not a structure or union
+  ADCChannel[0].Config.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+                      ^
+../Core/Src/main.c:286:22: error: request for member 'Channel' in something not a structure or union
+  ADCChannel[1].Config.Channel = ADC_CHANNEL_1;
+                      ^
+../Core/Src/main.c:287:22: error: request for member 'Rank' in something not a structure or union
+  ADCChannel[1].Config.Rank = 1;
+                      ^
+../Core/Src/main.c:288:22: error: request for member 'SamplingTime' in something not a structure or union
+  ADCChannel[1].Config.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+                      ^
+../Core/Src/main.c:291:22: error: request for member 'Channel' in something not a structure or union
+  ADCChannel[2].Config.Channel = ADC_CHANNEL_TEMPSENSOR;
+                      ^
+../Core/Src/main.c:292:22: error: request for member 'Rank' in something not a structure or union
+  ADCChannel[2].Config.Rank = 1;
+                      ^
+../Core/Src/main.c:293:22: error: request for member 'SamplingTime' in something not a structure or union
+  ADCChannel[2].Config.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+                      ^
+../Core/Src/main.c: In function 'ADCPollingMethodUpdate':
+../Core/Src/main.c:300:31: warning: passing argument 2 of 'HAL_ADC_ConfigChannel' from incompatible pointer type [-Wincompatible-pointer-types]
+  HAL_ADC_ConfigChannel(&hadc1,&ADCChannel[i].Config);
+                               ^
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:292:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h:609:19: note: expected 'ADC_ChannelConfTypeDef * {aka struct <anonymous> *}' but argument is of type 'int *'
+ HAL_StatusTypeDef HAL_ADC_ConfigChannel(ADC_HandleTypeDef* hadc, ADC_ChannelConfTypeDef* sConfig);
+                   ^~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:40:29 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-g++ -o "week3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\week3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: week3.elf
+ 
+arm-none-eabi-size   week3.elf 
+arm-none-eabi-objdump -h -S  week3.elf  > "week3.list"
+arm-none-eabi-objcopy  -O binary  week3.elf  "week3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+Finished building: week3.list
+Finished building: week3.bin
+ 
+ 
+14:42:59 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-size   week3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+14:43:02 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-size   week3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+14:43:39 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-size   week3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+14:43:53 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-size   week3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+15:25:27 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+15:27:07 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+15:27:35 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+15:30:13 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+15:30:39 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+15:39:52 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+15:48:37 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+15:49:04 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+15:49:10 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+15:55:13 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:316:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:111:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12496	    224	   1696	  14416	   3850	Lab2.elf
+Finished building: default.size.stdout
+Finished building: Lab2.list
+Finished building: Lab2.bin
+ 
+ 
+ 
+16:03:10 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:110:5: warning: implicit declaration of function 'buttonMatrix' [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:315:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:110:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+Finished building: Lab2.list
+Finished building: Lab2.bin
+ 
+ 
+ 
+16:08:34 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:5: warning: implicit declaration of function 'buttonMatrix'; did you mean 'ButtonMatrix'? [-Wimplicit-function-declaration]
+     buttonMatrix();
+     ^~~~~~~~~~~~
+     ButtonMatrix
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:316:8: warning: conflicting types for 'buttonMatrix'
+   void buttonMatrix() {
+        ^~~~~~~~~~~~
+../Core/Src/main.c:111:5: note: previous implicit declaration of 'buttonMatrix' was here
+     buttonMatrix();
+     ^~~~~~~~~~~~
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+Finished building: Lab2.list
+Finished building: Lab2.bin
+ 
+ 
+ 
+16:09:14 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\Lab2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+arm-none-eabi-objcopy  -O binary  Lab2.elf  "Lab2.bin"
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+Finished building: Lab2.list
+Finished building: Lab2.bin
+ 
+ 
+ 
+16:09:45 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+16:15:50 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j4 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12480	    224	   1688	  14392	   3838	Lab2.elf
+Finished building: default.size.stdout
+ 
+16:29:06 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-size   week3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+16:29:08 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-size   week3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+16:29:10 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-size   week3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+16:29:39 **** Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411retx.d" -MT"Core/Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411retx.o" "../Core/Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+cc1.exe: fatal error: ../Core/Src/main.c: Permission denied
+compilation terminated.
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:31:35 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  10464	     20	   1764	  12248	   2fd8	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+Finished building: LAB3.bin
+ 
+16:31:50 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10464	     20	   1764	  12248	   2fd8	LAB3.elf
+Finished building: default.size.stdout
+ 
+16:32:00 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10464	     20	   1764	  12248	   2fd8	LAB3.elf
+Finished building: default.size.stdout
+ 
+16:45:00 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-size   week3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+19:12:05 **** Incremental Build of configuration Debug for project week3 ****
+make -j4 all 
+arm-none-eabi-size   week3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10544	     20	   1764	  12328	   3028	week3.elf
+Finished building: default.size.stdout
+ 
+19:16:37 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:56:18: warning: extra tokens at end of #include directive
+ #include <math.h>;
+                  ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: error: 'ans' undeclared (first use in this function)
+    ans = log2(ADCChannel[3].Data);
+    ^~~
+../Core/Src/main.c:114:4: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../Core/Src/main.c:56:0:
+../Core/Src/main.c:114:29: error: 'ADCStructure {aka struct <anonymous>}' has no member named 'Data'; did you mean 'data'?
+    ans = log2(ADCChannel[3].Data);
+                             ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:17:03 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: error: 'ans' undeclared (first use in this function)
+    ans = log2(ADCChannel[3].Data);
+    ^~~
+../Core/Src/main.c:113:4: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../Core/Src/main.c:25:0:
+../Core/Src/main.c:113:29: error: 'ADCStructure {aka struct <anonymous>}' has no member named 'Data'; did you mean 'data'?
+    ans = log2(ADCChannel[3].Data);
+                             ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:17:22 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:25:0:
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:29: error: 'ADCStructure {aka struct <anonymous>}' has no member named 'Data'; did you mean 'data'?
+    ans = log2(ADCChannel[3].Data);
+                             ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:17:40 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14044	    124	   1772	  15940	   3e44	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+Finished building: LAB3.bin
+ 
+ 
+19:17:50 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14044	    124	   1772	  15940	   3e44	LAB3.elf
+Finished building: default.size.stdout
+ 
+19:20:19 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:313:2: error: unknown type name 'USER'; did you mean 'UNUSED'?
+ }USER CODE END 4 */
+  ^~~~
+  UNUSED
+../Core/Src/main.c:313:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'END'
+ }USER CODE END 4 */
+            ^~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:20:39 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14052	    124	   1772	  15948	   3e4c	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+Finished building: LAB3.bin
+ 
+ 
+19:21:04 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14052	    124	   1772	  15948	   3e4c	LAB3.elf
+Finished building: default.size.stdout
+ 
+19:22:46 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:25:0:
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:22: error: '(ADCStructure *)&ADCChannel' is a pointer; did you mean to use '->'?
+ ans = log2(ADCChannel.Data);
+                      ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:23:36 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14116	    124	   1772	  16012	   3e8c	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.bin
+ 
+Finished building: LAB3.list
+ 
+ 
+19:24:07 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14116	    124	   1772	  16012	   3e8c	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.list
+Finished building: LAB3.bin
+ 
+ 
+ 
+19:36:19 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cal_temp':
+../Core/Src/main.c:325:2: error: expected '}' before 'else'
+  else
+  ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:328:2: warning: data definition has no type or storage class
+  TempHi = TempHi & 0x7F;
+  ^~~~~~
+../Core/Src/main.c:328:2: warning: type defaults to 'int' in declaration of 'TempHi' [-Wimplicit-int]
+../Core/Src/main.c:328:11: error: initializer element is not constant
+  TempHi = TempHi & 0x7F;
+           ^~~~~~
+../Core/Src/main.c:329:2: warning: data definition has no type or storage class
+  TempLow = TempLow & 0xF0;
+  ^~~~~~~
+../Core/Src/main.c:329:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:329:12: error: initializer element is not constant
+  TempLow = TempLow & 0xF0;
+            ^~~~~~~
+../Core/Src/main.c:330:2: warning: data definition has no type or storage class
+  TempLow = TempLow >> 4;
+  ^~~~~~~
+../Core/Src/main.c:330:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:330:2: error: redefinition of 'TempLow'
+../Core/Src/main.c:329:2: note: previous definition of 'TempLow' was here
+  TempLow = TempLow & 0xF0;
+  ^~~~~~~
+../Core/Src/main.c:330:12: error: initializer element is not constant
+  TempLow = TempLow >> 4;
+            ^~~~~~~
+../Core/Src/main.c:331:2: warning: data definition has no type or storage class
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:331:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:331:12: error: initializer element is not constant
+  Decimal = TempLow;
+            ^~~~~~~
+../Core/Src/main.c:332:2: warning: data definition has no type or storage class
+  Decimal = Decimal*625;
+  ^~~~~~~
+../Core/Src/main.c:332:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:332:2: error: redefinition of 'Decimal'
+../Core/Src/main.c:331:2: note: previous definition of 'Decimal' was here
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:332:12: error: initializer element is not constant
+  Decimal = Decimal*625;
+            ^~~~~~~
+../Core/Src/main.c:333:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:37:01 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cal_temp':
+../Core/Src/main.c:325:2: error: expected '}' before 'else'
+  else
+  ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:328:2: warning: data definition has no type or storage class
+  TempHi = TempHi & 0x7F;
+  ^~~~~~
+../Core/Src/main.c:328:2: warning: type defaults to 'int' in declaration of 'TempHi' [-Wimplicit-int]
+../Core/Src/main.c:328:2: error: conflicting types for 'TempHi'
+../Core/Src/main.c:55:10: note: previous declaration of 'TempHi' was here
+ uint32_t TempHi;
+          ^~~~~~
+../Core/Src/main.c:328:11: error: initializer element is not constant
+  TempHi = TempHi & 0x7F;
+           ^~~~~~
+../Core/Src/main.c:329:2: warning: data definition has no type or storage class
+  TempLow = TempLow & 0xF0;
+  ^~~~~~~
+../Core/Src/main.c:329:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:329:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:329:12: error: initializer element is not constant
+  TempLow = TempLow & 0xF0;
+            ^~~~~~~
+../Core/Src/main.c:330:2: warning: data definition has no type or storage class
+  TempLow = TempLow >> 4;
+  ^~~~~~~
+../Core/Src/main.c:330:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:330:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:330:12: error: initializer element is not constant
+  TempLow = TempLow >> 4;
+            ^~~~~~~
+../Core/Src/main.c:331:2: warning: data definition has no type or storage class
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:331:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:331:12: error: initializer element is not constant
+  Decimal = TempLow;
+            ^~~~~~~
+../Core/Src/main.c:332:2: warning: data definition has no type or storage class
+  Decimal = Decimal*625;
+  ^~~~~~~
+../Core/Src/main.c:332:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:332:2: error: redefinition of 'Decimal'
+../Core/Src/main.c:331:2: note: previous definition of 'Decimal' was here
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:332:12: error: initializer element is not constant
+  Decimal = Decimal*625;
+            ^~~~~~~
+../Core/Src/main.c:333:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:37:31 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cal_temp':
+../Core/Src/main.c:325:2: error: expected '}' before 'else'
+  else
+  ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:328:2: warning: data definition has no type or storage class
+  TempHi = TempHi & 0x7F;
+  ^~~~~~
+../Core/Src/main.c:328:2: warning: type defaults to 'int' in declaration of 'TempHi' [-Wimplicit-int]
+../Core/Src/main.c:328:2: error: conflicting types for 'TempHi'
+../Core/Src/main.c:55:10: note: previous declaration of 'TempHi' was here
+ uint32_t TempHi;
+          ^~~~~~
+../Core/Src/main.c:328:11: error: initializer element is not constant
+  TempHi = TempHi & 0x7F;
+           ^~~~~~
+../Core/Src/main.c:329:2: warning: data definition has no type or storage class
+  TempLow = TempLow & 0xF0;
+  ^~~~~~~
+../Core/Src/main.c:329:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:329:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:329:12: error: initializer element is not constant
+  TempLow = TempLow & 0xF0;
+            ^~~~~~~
+../Core/Src/main.c:330:2: warning: data definition has no type or storage class
+  TempLow = TempLow >> 4;
+  ^~~~~~~
+../Core/Src/main.c:330:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:330:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:330:12: error: initializer element is not constant
+  TempLow = TempLow >> 4;
+            ^~~~~~~
+../Core/Src/main.c:331:2: warning: data definition has no type or storage class
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:331:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:331:12: error: initializer element is not constant
+  Decimal = TempLow;
+            ^~~~~~~
+../Core/Src/main.c:332:2: warning: data definition has no type or storage class
+  Decimal = Decimal*625;
+  ^~~~~~~
+../Core/Src/main.c:332:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:332:2: error: redefinition of 'Decimal'
+../Core/Src/main.c:331:2: note: previous definition of 'Decimal' was here
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:332:12: error: initializer element is not constant
+  Decimal = Decimal*625;
+            ^~~~~~~
+../Core/Src/main.c:333:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:38:06 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:329:2: warning: data definition has no type or storage class
+  TempHi = TempHi & 0x7F;
+  ^~~~~~
+../Core/Src/main.c:329:2: warning: type defaults to 'int' in declaration of 'TempHi' [-Wimplicit-int]
+../Core/Src/main.c:329:2: error: conflicting types for 'TempHi'
+../Core/Src/main.c:55:10: note: previous declaration of 'TempHi' was here
+ uint32_t TempHi;
+          ^~~~~~
+../Core/Src/main.c:329:11: error: initializer element is not constant
+  TempHi = TempHi & 0x7F;
+           ^~~~~~
+../Core/Src/main.c:330:2: warning: data definition has no type or storage class
+  TempLow = TempLow & 0xF0;
+  ^~~~~~~
+../Core/Src/main.c:330:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:330:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:330:12: error: initializer element is not constant
+  TempLow = TempLow & 0xF0;
+            ^~~~~~~
+../Core/Src/main.c:331:2: warning: data definition has no type or storage class
+  TempLow = TempLow >> 4;
+  ^~~~~~~
+../Core/Src/main.c:331:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:331:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:331:12: error: initializer element is not constant
+  TempLow = TempLow >> 4;
+            ^~~~~~~
+../Core/Src/main.c:332:2: warning: data definition has no type or storage class
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:332:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:332:12: error: initializer element is not constant
+  Decimal = TempLow;
+            ^~~~~~~
+../Core/Src/main.c:333:2: warning: data definition has no type or storage class
+  Decimal = Decimal*625;
+  ^~~~~~~
+../Core/Src/main.c:333:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:333:2: error: redefinition of 'Decimal'
+../Core/Src/main.c:332:2: note: previous definition of 'Decimal' was here
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:333:12: error: initializer element is not constant
+  Decimal = Decimal*625;
+            ^~~~~~~
+../Core/Src/main.c:334:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:38:07 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:329:2: warning: data definition has no type or storage class
+  TempHi = TempHi & 0x7F;
+  ^~~~~~
+../Core/Src/main.c:329:2: warning: type defaults to 'int' in declaration of 'TempHi' [-Wimplicit-int]
+../Core/Src/main.c:329:2: error: conflicting types for 'TempHi'
+../Core/Src/main.c:55:10: note: previous declaration of 'TempHi' was here
+ uint32_t TempHi;
+          ^~~~~~
+../Core/Src/main.c:329:11: error: initializer element is not constant
+  TempHi = TempHi & 0x7F;
+           ^~~~~~
+../Core/Src/main.c:330:2: warning: data definition has no type or storage class
+  TempLow = TempLow & 0xF0;
+  ^~~~~~~
+../Core/Src/main.c:330:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:330:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:330:12: error: initializer element is not constant
+  TempLow = TempLow & 0xF0;
+            ^~~~~~~
+../Core/Src/main.c:331:2: warning: data definition has no type or storage class
+  TempLow = TempLow >> 4;
+  ^~~~~~~
+../Core/Src/main.c:331:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:331:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:331:12: error: initializer element is not constant
+  TempLow = TempLow >> 4;
+            ^~~~~~~
+../Core/Src/main.c:332:2: warning: data definition has no type or storage class
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:332:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:332:12: error: initializer element is not constant
+  Decimal = TempLow;
+            ^~~~~~~
+../Core/Src/main.c:333:2: warning: data definition has no type or storage class
+  Decimal = Decimal*625;
+  ^~~~~~~
+../Core/Src/main.c:333:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:333:2: error: redefinition of 'Decimal'
+../Core/Src/main.c:332:2: note: previous definition of 'Decimal' was here
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:333:12: error: initializer element is not constant
+  Decimal = Decimal*625;
+            ^~~~~~~
+../Core/Src/main.c:334:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:39:15 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:329:2: warning: data definition has no type or storage class
+  TempHi = TempHi & 0x7F;
+  ^~~~~~
+../Core/Src/main.c:329:2: warning: type defaults to 'int' in declaration of 'TempHi' [-Wimplicit-int]
+../Core/Src/main.c:329:2: error: conflicting types for 'TempHi'
+../Core/Src/main.c:55:10: note: previous declaration of 'TempHi' was here
+ uint32_t TempHi;
+          ^~~~~~
+../Core/Src/main.c:329:11: error: initializer element is not constant
+  TempHi = TempHi & 0x7F;
+           ^~~~~~
+../Core/Src/main.c:330:2: warning: data definition has no type or storage class
+  TempLow = TempLow & 0xF0;
+  ^~~~~~~
+../Core/Src/main.c:330:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:330:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:330:12: error: initializer element is not constant
+  TempLow = TempLow & 0xF0;
+            ^~~~~~~
+../Core/Src/main.c:331:2: warning: data definition has no type or storage class
+  TempLow = TempLow >> 4;
+  ^~~~~~~
+../Core/Src/main.c:331:2: warning: type defaults to 'int' in declaration of 'TempLow' [-Wimplicit-int]
+../Core/Src/main.c:331:2: error: conflicting types for 'TempLow'
+../Core/Src/main.c:56:10: note: previous declaration of 'TempLow' was here
+ uint32_t TempLow;
+          ^~~~~~~
+../Core/Src/main.c:331:12: error: initializer element is not constant
+  TempLow = TempLow >> 4;
+            ^~~~~~~
+../Core/Src/main.c:332:2: warning: data definition has no type or storage class
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:332:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:332:12: error: initializer element is not constant
+  Decimal = TempLow;
+            ^~~~~~~
+../Core/Src/main.c:333:2: warning: data definition has no type or storage class
+  Decimal = Decimal*625;
+  ^~~~~~~
+../Core/Src/main.c:333:2: warning: type defaults to 'int' in declaration of 'Decimal' [-Wimplicit-int]
+../Core/Src/main.c:333:2: error: redefinition of 'Decimal'
+../Core/Src/main.c:332:2: note: previous definition of 'Decimal' was here
+  Decimal = TempLow;
+  ^~~~~~~
+../Core/Src/main.c:333:12: error: initializer element is not constant
+  Decimal = Decimal*625;
+            ^~~~~~~
+../Core/Src/main.c:334:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:42:45 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:1: error: 'TempHi' undeclared (first use in this function)
+ TempHi = ADCChannel[2].Data;
+ ^~~~~~
+../Core/Src/main.c:113:1: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:114:1: error: 'TempLow' undeclared (first use in this function); did you mean 'TempHi'?
+ TempLow = ADCChannel[2].Data;
+ ^~~~~~~
+ TempHi
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:43:09 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Core/Src/main.o: In function `main':
+C:/Users/Pakap/OneDrive/desktop/FRA222/FRA222/LAB3/Debug/../Core/Src/main.c:114: undefined reference to `cal_Temp'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:58: LAB3.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:43:56 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10612	     20	   1772	  12404	   3074	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.bin
+ 
+Finished building: LAB3.list
+ 
+ 
+19:44:08 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10612	     20	   1772	  12404	   3074	LAB3.elf
+Finished building: default.size.stdout
+ 
+09:55:58 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10604	     20	   1772	  12396	   306c	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+Finished building: LAB3.bin
+ 
+ 
+10:01:08 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12748	     20	   1772	  14540	   38cc	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.list
+Finished building: LAB3.bin
+ 
+ 
+ 
+10:07:02 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14436	    124	   1772	  16332	   3fcc	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.bin
+Finished building: LAB3.list
+ 
+ 
+ 
+10:07:19 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14436	    124	   1772	  16332	   3fcc	LAB3.elf
+Finished building: default.size.stdout
+ 
+10:24:58 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14436	    124	   1772	  16332	   3fcc	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.list
+Finished building: LAB3.bin
+ 
+ 
+ 
+10:29:45 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:54:1: warning: data definition has no type or storage class
+ floatbitAns;
+ ^~~~~~~~~~~
+../Core/Src/main.c:54:1: warning: type defaults to 'int' in declaration of 'floatbitAns' [-Wimplicit-int]
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:1: error: 'bitAns' undeclared (first use in this function)
+ bitAns = ADCChannel[2].Data;
+ ^~~~~~
+../Core/Src/main.c:114:1: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'cal_Temp':
+../Core/Src/main.c:318:2: error: 'bitAns' undeclared (first use in this function)
+  bitAns = log2(bitAns);
+  ^~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:32:21 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:54:1: warning: data definition has no type or storage class
+ floatbitAns;
+ ^~~~~~~~~~~
+../Core/Src/main.c:54:1: warning: type defaults to 'int' in declaration of 'floatbitAns' [-Wimplicit-int]
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:1: error: 'bitAns' undeclared (first use in this function)
+ bitAns = ADCChannel[2].Data;
+ ^~~~~~
+../Core/Src/main.c:114:1: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'cal_Temp':
+../Core/Src/main.c:318:2: error: 'bitAns' undeclared (first use in this function)
+  bitAns = log2(bitAns);
+  ^~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:32:32 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14380	    124	   1772	  16276	   3f94	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.bin
+Finished building: LAB3.list
+ 
+ 
+10:32:53 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14380	    124	   1772	  16276	   3f94	LAB3.elf
+Finished building: default.size.stdout
+ 
+10:34:21 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cal_Temp':
+../Core/Src/main.c:316:2: error: 'bitAns' undeclared (first use in this function)
+  bitAns = log2(bitAns);
+  ^~~~~~
+../Core/Src/main.c:316:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:34:27 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12816	     20	   1772	  14608	   3910	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.bin
+Finished building: LAB3.list
+ 
+ 
+10:34:40 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12816	     20	   1772	  14608	   3910	LAB3.elf
+Finished building: default.size.stdout
+ 
+10:37:05 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12816	     20	   1772	  14608	   3910	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.bin
+ 
+Finished building: LAB3.list
+ 
+ 
+10:38:39 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12828	     20	   1772	  14620	   391c	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.bin
+ 
+Finished building: LAB3.list
+ 
+ 
+10:39:17 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12828	     20	   1772	  14620	   391c	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.bin
+Finished building: LAB3.list
+ 
+ 
+ 
+10:39:31 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12828	     20	   1772	  14620	   391c	LAB3.elf
+Finished building: default.size.stdout
+ 
+10:43:05 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12828	     20	   1772	  14620	   391c	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.bin
+Finished building: LAB3.list
+ 
+ 
+10:46:39 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12836	     20	   1772	  14628	   3924	LAB3.elf
+Finished building: default.size.stdout
+Finished building: LAB3.bin
+Finished building: LAB3.list
+ 
+ 
+ 
