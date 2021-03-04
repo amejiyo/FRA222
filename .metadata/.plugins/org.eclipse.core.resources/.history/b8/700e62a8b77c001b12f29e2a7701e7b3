@@ -287,12 +287,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PB3 */
-  GPIO_InitStruct.Pin = GPIO_PIN_3;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
 }
 
 /* USER CODE BEGIN 4 */
@@ -336,7 +330,7 @@ void cal_Temp(){
 		ADCOutputConverted = ((ADCChannel[2].Data*3.3/4096.00) -0.76)*1000.00/2.5 +25.00;
 	}
 	else{
-		ADCOutputConverted = (ADCChannel[0].Data*3.3/4096.00)*1000;
+		ADCOutputConverted = (ADCChannel[2].Data*3.3/4096.00);
 	}
 }
 /* USER CODE END 4 */

@@ -1,20 +1,10 @@
-10:46:39 **** Incremental Build of configuration Debug for project LAB3 ****
+14:55:37 **** Incremental Build of configuration Debug for project LAB3 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\LAB3\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: LAB3.elf
- 
-arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
-arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
 arm-none-eabi-size   LAB3.elf 
    text	   data	    bss	    dec	    hex	filename
-  12836	     20	   1772	  14628	   3924	LAB3.elf
+  13104	     20	   1780	  14904	   3a38	LAB3.elf
 Finished building: default.size.stdout
-Finished building: LAB3.bin
-Finished building: LAB3.list
- 
- 
  
 
-10:46:42 Build Finished. 0 errors, 0 warnings. (took 2s.839ms)
+14:55:37 Build Finished. 0 errors, 0 warnings. (took 579ms)
 

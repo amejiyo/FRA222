@@ -336,7 +336,7 @@ void cal_Temp(){
 		ADCOutputConverted = ((ADCChannel[2].Data*3.3/4096.00) -0.76)*1000.00/2.5 +25.00;
 	}
 	else{
-		ADCOutputConverted = (ADCChannel[0].Data*3.3/4096.00)*1000;
+		ADCOutputConverted = (ADCChannel[2].Data*3.3/4096.00)*1000;
 	}
 }
 /* USER CODE END 4 */
