@@ -111,9 +111,9 @@ int main(void)
   while (1)
   {
 	  a = randomTime-HAL_GetTick()+timer;
-	  if ((HAL_GetTick()-timer >= randomTime) && (mode[1] == 0) && (mode[0] == 1))
+	  if (HAL_GetTick()-timer >= randomTime && (mode[1] == 0))
 		{
-		  	mode[1] = 1;
+		  mode[1] = 1;
 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin,GPIO_PIN_SET);
 			timeTrick = HAL_GetTick();
 		}

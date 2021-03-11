@@ -51,7 +51,7 @@ uint32_t timer = 0;
 uint32_t randomTime = 0;
 uint32_t respondTime = 0;
 uint32_t timeTrick = 0;
-uint8_t mode[2] = {0};
+_Bool mode = 0;
 int a = 0;
 /* USER CODE END PV */
 
@@ -111,9 +111,8 @@ int main(void)
   while (1)
   {
 	  a = randomTime-HAL_GetTick()+timer;
-	  if ((HAL_GetTick()-timer >= randomTime) && (mode[1] == 0) && (mode[0] == 1))
+	  if (HAL_GetTick()-timer >= randomTime)
 		{
-		  	mode[1] = 1;
 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin,GPIO_PIN_SET);
 			timeTrick = HAL_GetTick();
 		}
@@ -333,9 +332,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	if(GPIO_Pin == GPIO_PIN_13)
 	{
-		if (mode[0] == 0)
+		a = HAL_GetTick();
+		if (mode == 0)
 		{
-			mode[0] = 1;
+			mode = 1;
 			randomTime = 100 + ((22695477*ADCData[0]) + ADCData[1])%10000;
 			timer = HAL_GetTick();
 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin,GPIO_PIN_RESET);
@@ -343,8 +343,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		else
 		{
 			respondTime = HAL_GetTick() - timeTrick;
-			mode[0] = 0;
-			mode[1] = 0;
+			mode = 0;
 		}
 	}
 }

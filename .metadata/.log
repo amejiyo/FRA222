@@ -2162,3 +2162,48 @@ Reason: (1) Failed to connect to device. Please check power and cabling to targe
 !MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.actions.DsfSuspendCommand$4$1@4281cd1a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Given context: (gdb[20].proc[42000].threadGroup[i1],gdb[20].proc[42000].OSthread[1]).thread[1], is already suspended. null' resulted in an error.
 !SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2021-03-11 14:22:53.313
 !MESSAGE Given context: (gdb[20].proc[42000].threadGroup[i1],gdb[20].proc[42000].OSthread[1]).thread[1], is already suspended.
+!SESSION 2021-03-11 14:26:16.125 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_272
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-11 14:26:23.891
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-03-11 14:26:36.421
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-03-11 14:26:36.560
+!MESSAGE Log4j initialized with config file C:\Users\Pakap\OneDrive\desktop\FRA222\FRA222\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-03-11 14:26:51.983
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-11 14:26:52.676
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-11 14:35:16.513
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 4 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-11 14:35:16.524
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-11 14:35:16.538
+!MESSAGE 5
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-11 14:35:16.549
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 4 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-11 14:35:16.557
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-11 14:35:16.565
+!MESSAGE 5
+
+!ENTRY org.eclipse.core.jobs 2 2 2021-03-11 15:12:03.309
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.debug.core.DebugPlugin$EventDispatchJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2021-03-11 15:12:03.323
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
